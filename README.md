@@ -1,2 +1,2 @@
-# dependency-insight-api-dto
-dependency-insight-api data transfer objects
+# dependency-insight-dto
+dependency-insight data transfer objects
