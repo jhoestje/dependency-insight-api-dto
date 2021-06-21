@@ -1,4 +1,4 @@
-package org.johoco.depinsight.web.dto;
+package org.johoco.depinsight.dto;
 
 import java.util.Date;
 
