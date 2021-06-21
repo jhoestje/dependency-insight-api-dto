@@ -22,4 +22,5 @@ public class ArtifactDTO {
 //	@JsonSerialize(using = LocalDateTimeSerializer.class)
 	private Date createdDate;
 	private Date lastUpdatedDate;
+	
 }
