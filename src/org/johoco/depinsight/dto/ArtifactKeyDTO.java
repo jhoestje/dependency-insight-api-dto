@@ -5,9 +5,14 @@ import java.util.Date;
 import lombok.Builder;
 import lombok.Data;
 
+/**
+ * Need to rethink how to represent an Artifact.... key vs artifact vs pom type representation
+ * @author John
+ *
+ */
 @Data
 @Builder
-public class ArtifactDTO {
+public class ArtifactKeyDTO {
 	private String language;
 	private String groupId;
 	private String artifactId;

@@ -10,14 +10,12 @@ import lombok.Data;
  * @author John Hoestje
  */
 @Data
-public class DependencyDTO {
+public class ReportPlugin {
 	private String groupId;
 	private String artifactId;
 	private String version;
-	private String type;
-	private String classifier;
-	private String scope;
-	private String systemPath;
-	List<Exclusion> exclusions;
-	private String optional;
+	private List<ReportSet> reportSets;
+	private String inherited;
+	// configuration element per XSD <xs:any minOccurs="0" maxOccurs="unbounded" processContents="skip"/>
+	// this may be a free form area to map
 }
