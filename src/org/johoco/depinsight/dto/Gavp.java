@@ -1,10 +1,10 @@
 package org.johoco.depinsight.dto;
 
-import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
-@Builder
+@NoArgsConstructor
 public class Gavp {
 	private String artifactId;
 	private String groupId;

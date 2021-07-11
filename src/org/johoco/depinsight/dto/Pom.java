@@ -5,6 +5,7 @@ import java.util.Map;
 
 import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 /**
  * Per https://maven.apache.org/xsd/maven-4.0.0.xsd
@@ -13,8 +14,11 @@ import lombok.Data;
  *
  */
 @Data
-@Builder
+@NoArgsConstructor
+//@Builder
 public class Pom {
+	// TODO: add language?
+
 	private String modelVersion;
 	private Gav parent;
 
@@ -37,7 +41,6 @@ public class Pom {
 	private IssueManagement issueManagement;
 	private CiManagement ciManagement;
 	private DistributionManagement distributionManagement;
-	// aether
 	private List<DependencyManagementDTO> dependencyManagement;
 	private List<DependencyDTO> dependencies;
 	private Map<String, String> properties;
