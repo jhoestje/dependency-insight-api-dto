@@ -1,12 +1,14 @@
 package org.johoco.depinsight.dto;
 
-import java.util.Date;
+import org.joda.time.DateTime;
 
 import lombok.Builder;
 import lombok.Data;
 
 /**
- * Need to rethink how to represent an Artifact.... key vs artifact vs pom type representation
+ * Need to rethink how to represent an Artifact.... key vs artifact vs pom type
+ * representation
+ * 
  * @author John
  *
  */
@@ -25,7 +27,7 @@ public class ArtifactKeyDTO {
 //
 //	@JsonFormat(pattern="dd MMM yyyy hh:mm:ss")
 //	@JsonSerialize(using = LocalDateTimeSerializer.class)
-	private Date createdDate;
-	private Date lastUpdatedDate;
-	
+	private DateTime createdDate;
+	private DateTime lastUpdatedDate;
+
 }

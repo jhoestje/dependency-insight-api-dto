@@ -24,12 +24,14 @@ public class Pom {
 	private String modelVersion;
 	private Gav parent;
 
+	@Builder.Default
 	private String language = "java";
 
 	private String groupId;
 	private String artifactId;
 	private String version;
-	private String packaging;
+	@Builder.Default
+	private String packaging = "pom";
 	private String name;
 	private String description;
 	private String url;
