@@ -1,5 +1,6 @@
 package org.johoco.depinsight.dto;
 
+import lombok.Builder;
 import lombok.Data;
 
 /**
@@ -8,6 +9,7 @@ import lombok.Data;
  * @author John Hoestje
  */
 @Data
+@Builder
 public class Notifier {
 	private String type;
 	private String sendOnError; // boolean
