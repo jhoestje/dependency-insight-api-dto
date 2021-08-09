@@ -3,10 +3,15 @@ package org.johoco.depinsight.dto;
 import java.util.Collection;
 import java.util.Map;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
-//@Builder
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class DependencyManagementDTO {
 
 	private String version;

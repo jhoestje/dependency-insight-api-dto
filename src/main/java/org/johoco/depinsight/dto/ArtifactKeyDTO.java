@@ -2,18 +2,21 @@ package org.johoco.depinsight.dto;
 
 import org.joda.time.DateTime;
 
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 /**
- * Need to rethink how to represent an Artifact.... key vs artifact vs pom type
- * representation
+ * Need to rethink how to represent an Artifact.... key vs artifact vs pom type representation
  * 
  * @author John
  *
  */
 @Data
 @Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class ArtifactKeyDTO {
 	private String language;
 	private String groupId;

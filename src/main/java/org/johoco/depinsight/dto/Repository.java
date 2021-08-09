@@ -1,7 +1,9 @@
 package org.johoco.depinsight.dto;
 
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 /**
  *
@@ -10,6 +12,8 @@ import lombok.Data;
  */
 @Data
 @Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class Repository {
 	private RepositoryPolicy releases;
 	private RepositoryPolicy snapshots;
